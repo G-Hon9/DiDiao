@@ -16,7 +16,7 @@ Page({
     var zhen="小雨";
     if(zhen=="小雨")
     {
-      console.log("的");
+      console.log("是真的");
     }
     console.log("b:"+wea+"\n b.length"+wea.length);
     console.log("a:"+a);
