@@ -1,0 +1,30 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" include-points="{{markers}}" bindmarkertap="makertap">
+  </map>
+</view>
+<view class="display_weather">
+  <view>
+    <view class="click" bindtap="clickme">
+      标记省会城市
+    </view>
+    <view class="click" bindtap="clickme2">
+      回到当前位置
+    </view>
+  </view>
+  <view class="weather_data">
+    <!-- <view style="height:10rpx;"></view> -->
+    <view class="temperature">
+      {{temperature}}
+    </view>
+    <view class="city">
+      {{cityname}}
+    </view>
+    <view class="air">
+      {{weather}}
+    </view>
+  </view>
+  <view class="weather_picture">
+    <image class="weather_pic" src="{{weather_pic}}">
+    </image>
+  </view>
+</view>

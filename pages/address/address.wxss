@@ -1,0 +1,68 @@
+.map_container{ 
+    height: 500rpx; 
+    width: 100%; 
+    display: block;
+} 
+.map { 
+    height: 100%; 
+    width: 100%; 
+}
+.rgc_info {
+    padding: 5px;
+}
+.rgc_info {
+    display: block;
+}
+.display_weather{
+  height: 500rpx;
+  width:100%;
+  background:linear-gradient(rgb(84, 215, 248), rgb(203, 207, 252));
+  color: bule;
+}
+.temperature{
+  height: 200rpx;
+  width: 350rpx;
+  padding-left: 10rpx;
+  color: white;
+  font-size: 130rpx;
+}
+.city{
+  height: 100rpx;
+  color: white;
+  font-size: 50rpx;
+  padding-left: 70rpx;
+}
+.air{
+  height: 100rpx;
+  font-size: 40rpx;
+  padding-left: 70rpx;
+  color:white;
+}
+.weather_data{
+  height: 430rpx;
+  width:50%;
+  float:left;
+}
+.weather_picture{
+  height: 430rpx;
+  width:360rpx;
+  float:left;
+}
+.weather_pic{
+  height: 300rpx;
+  width:300rpx;
+  padding-left: 30rpx;
+}
+.click{
+  line-height: 50rpx;
+  margin-top: 20rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  padding-left: 70rpx;
+  padding-right: 70rpx;
+  float: left;
+  /* border: 1.5px solid gray; */
+  border-radius: 50%;
+  color: rgb(2, 0, 10);
+  background: rgb(120, 200, 240);
+}
