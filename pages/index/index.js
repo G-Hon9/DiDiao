@@ -1,6 +1,6 @@
-// 引用百度地图微信小程序JSAPI模块 
+// 引用百度地图微信小程序JSAPI模块
 var bmap = require('../libs/bmap-wx.min.js');
-/*Page({
+Page({
   data: {
     weatherData: '',
     city:'',
@@ -35,10 +35,10 @@ var bmap = require('../libs/bmap-wx.min.js');
     };
     var success = function (data) {
       var weatherData = data.currentWeather[0];
-      weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' 
-      + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' 
-      + '温度：' + weatherData.temperature + '\n' + '天气：' 
-      + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
+      weatherData = '城市：' + weatherData.currentCity + '\n\n' + 'PM2.5：' 
+      + weatherData.pm25 + '\n\n' + '日期：' + weatherData.date + '\n\n' 
+      + '温度：' + weatherData.temperature + '\n\n' + '天气：' 
+      + weatherData.weatherDesc + '\n\n' + '风力：' + weatherData.wind + '\n\n';
       that.setData({
         weatherData: weatherData
       });
@@ -47,47 +47,9 @@ var bmap = require('../libs/bmap-wx.min.js');
     // 发起weather请求
     BMap.weather(
       {
-      loction: "116.43, 40.75",
+      //loction: "116.43, 40.75",
       fail: fail,
       success: success
     });
   } 
-})*/
-
-const app = getApp();
-const amap = new bmap.BMapWX({
-  ak: 'vCSzKcGRef1sGtkWEN1nFawMEYG03i4f'
-});
-const key = app.data.key;
-Page({
-  data: {
-    address: '',
-    weather: '',
-    temperature: '',
-    humidity: '',
-    windpower: '',
-    winddirection: ''
-  },
-  onLoad() {
-    var _this = this;
-    var myAmap = new amap.AMapWX({ key: key });
-    myAmap.getWeather({
-      type: 'live',
-      success(data) {
-        if (data.city) {
-          _this.setData({
-            address: data.liveData.city,
-            humidity: data.liveData.humidity,
-            temperature: data.liveData.temperature,
-            weather: data.liveData.weather,
-            winddirection: data.liveData.winddirection,
-            windpower: data.liveData.windpower
-          })
-        }
-      },
-      fail() {
-        wx.showToast({ title: '失败！' })
-      }
-    })
-  }
 })
