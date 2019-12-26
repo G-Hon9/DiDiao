@@ -1,6 +1,6 @@
 // 引用百度地图微信小程序JSAPI模块 
 var bmap = require('../libs/bmap-wx.min.js');
-Page({
+/*Page({
   data: {
     weatherData: '',
     city:'',
@@ -52,7 +52,7 @@ Page({
       success: success
     });
   } 
-})
+})*/
 
 const app = getApp();
 const amap = app.data.amap;
