@@ -186,7 +186,7 @@ Page({
       that.setData({
         weather_id: 3
       })
-    }//asda
+    }
     else if (data == "大雪") {
       that.setData({
         weather_id: 3
