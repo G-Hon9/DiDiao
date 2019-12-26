@@ -58,7 +58,7 @@ const app = getApp();
 const amap = new bmap.BMapWX({
   ak: 'vCSzKcGRef1sGtkWEN1nFawMEYG03i4f'
 });
-//const key = app.data.key;
+const key = app.data.key;
 Page({
   data: {
     address: '',
