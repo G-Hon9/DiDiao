@@ -27,4 +27,4 @@
     <image class="weather_pic" src="{{weather_pic}}">
     </image>
   </view>
-</view>
+</vi
