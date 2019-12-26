@@ -47,7 +47,7 @@ Page({
     // 发起weather请求
     BMap.weather(
       {
-      //loction: "116.43, 40.75",
+      loction: "116.43, 40.75",
       fail: fail,
       success: success
     });
