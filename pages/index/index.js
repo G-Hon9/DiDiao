@@ -55,7 +55,9 @@ var bmap = require('../libs/bmap-wx.min.js');
 })*/
 
 const app = getApp();
-const amap = app.data.amap;
+const amap = new bmap.BMapWX({
+  ak: 'vCSzKcGRef1sGtkWEN1nFawMEYG03i4f'
+});
 const key = app.data.key;
 Page({
   data: {
