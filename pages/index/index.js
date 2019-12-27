@@ -6,6 +6,7 @@ Page({
     city:'',
     img:"../img/weather_1.png"
   },
+  
   onLoad: function () {
     var num = 0;
     var str = "周日 12月22日 (实时：20℃)";

@@ -23,7 +23,7 @@ Page({
     weather_id:1,
     weather_pic: "../img/weather_1.png",
   },
-  // 标志物点击事件函数
+  // 标 志 物点 击事 件 函数
   makertap: function(e) {
     var that = this;
     var id = e.markerId;
