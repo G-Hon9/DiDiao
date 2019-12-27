@@ -10,7 +10,7 @@ var BMap = new bmap.BMapWX({
 });
 Page({
   data: {
-    markers: [],
+   // markers: [],
     latitude: "",
     longitude: "",
     rgcData: {},
