@@ -41,7 +41,7 @@
 .weather_data{
   height: 430rpx;
   width:50%;
-  /* float:left; */
+  float:left; 
 }
 .weather_picture{
   height: 430rpx;
