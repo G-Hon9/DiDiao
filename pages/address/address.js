@@ -25,7 +25,7 @@ Page({
   },
   // 标志物点击事件函数
   makertap: function(e) {
-   // var that = this;
+    var that = this;
     var id = e.markerId;
     that.setData({
       latitude: that.data.markers[id].latitude
