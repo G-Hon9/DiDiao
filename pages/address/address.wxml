@@ -9,7 +9,7 @@
     </view>
     <view class="click" bindtap="clickme2">
       回到当前位置
-    </view>
+    
   </view>
   <view class="weather_data">
     <!-- <view style="height:10rpx;"></view> -->
